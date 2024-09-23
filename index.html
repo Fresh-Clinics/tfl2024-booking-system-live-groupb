@@ -144,7 +144,7 @@ $(document).ready(function () {
     // Modified processEvents function to filter by specific categories
     function processEvents(events) {
         const calendarEvents = [];
-        const allowedCategories = ['1', '2', '4', '5', '6', '9', '11', '12'];
+        const allowedCategories = ['1', '3', '4', '5', '6', '10', '11', '12'];
         events.forEach(event => {
             if (event.timeMatrix && Array.isArray(event.timeMatrix) && allowedCategories.includes(event.categories[0])) {
                 event.timeMatrix.forEach(timeMatrix => {
